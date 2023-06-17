@@ -1,12 +1,16 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { openForm } from './loginFormSlice';
+import { openHomePage } from './homePageSlice';
+import HomePage from './HomePage';
 
 import './LoginForm.css';
 
 const LoginForm = () => {
   const dispatch = useDispatch();
   const loginForm = useSelector((state) => state.loginForm.isOpen);
+  const homePage = useSelector((state) => state.homePage.isOpen);
+  console.log(`homePage: ${homePage}`);
   return (
     <>
       {loginForm === true ? (
@@ -18,16 +22,23 @@ const LoginForm = () => {
             {/* <label>
               E-mail: <input className="input" type="text" name="E-mail" />
             </label> */}
-            <input className="input" type="submit" value="Submit" />
-            {/* <p>
-              Do you have already an account?{' '}
-              <span onClick={null}>Click here</span>
-            </p> */}
+            <button
+              className="input"
+              type="submit"
+              onClick={() => {
+                dispatch(openHomePage(true));
+                dispatch(openForm(false));
+              }}
+              value="Submit"
+            >
+              Submit
+            </button>
           </form>
         </div>
       ) : (
         <></>
       )}
+      {homePage === true ? <HomePage /> : <></>}
     </>
   );
 };

@@ -6,11 +6,13 @@ import './ButtonStart.css';
 const ButtonStart = () => {
   const dispatch = useDispatch();
   const loginForm = useSelector((state) => state.loginForm.isOpen);
-  console.log(loginForm)
+  const homePage = useSelector((state) => state.homePage.isOpen);
+
+  console.log(loginForm);
 
   return (
     <>
-      {loginForm === false ? (
+      {loginForm === false && homePage === false ? (
         <button
           className="button-start"
           onClick={() => dispatch(openForm(true))}

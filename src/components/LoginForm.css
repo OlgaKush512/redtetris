@@ -3,9 +3,12 @@
   background-color: #f0d792;
   padding: 30px;
   max-width: 40vw;
-  margin-left: 35vw;
   margin-top: 40vh;
+  display: flex;
+  justify-content: center;
 }
+
+
 
 .input[type='text'] {
   width: 100%;
