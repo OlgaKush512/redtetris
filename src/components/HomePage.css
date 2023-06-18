@@ -30,13 +30,39 @@
   height: 43vh;
   border-radius: 4px 4px 16px 16px;
   background-color: rgb(237, 234, 214, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
   /* border: solid; */
 }
 
-.game-option{
+.game-option {
   border: solid;
   width: 20vw;
   height: 30vh;
   margin-top: 5vh;
   margin-left: 10px;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: rgb(50, 126, 75);
+  /* background-color: buttonface; */
+  border-radius: 16px;
+  cursor : pointer;
 }
+/* 
+.game-option :hover{
+  border: solid;
+  width: 20vw;
+  height: 30vh;
+  margin-top: 5vh;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: rgb(170, 99, 51);
+  background-color: buttonface;
+  border-radius: 16px;
+} */
