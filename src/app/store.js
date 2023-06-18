@@ -1,14 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import loginFormReducer from '../components/loginFormSlice';
-// import inputReducer from '../components/inputSlice';
+import inputLoginReducer from '../components/inputLoginSlice';
 import homePageReducer from '../components/homePageSlice';
 
 
 export const store = configureStore({
   reducer: {
     loginForm: loginFormReducer,
-    // inputLoginForm: inputLoginFormReducer,
+    inputLogin: inputLoginReducer,
     homePage: homePageReducer,
-
   },
 });
