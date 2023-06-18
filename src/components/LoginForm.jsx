@@ -17,10 +17,11 @@ const LoginForm = () => {
     <>
       {loginForm === true ? (
         <div className="div-login">
-          <form>
+          <form  autoComplete="off">
             <label>
               Your login:{' '}
               <input
+              
                 className="input"
                 type="text"
                 name="Login"

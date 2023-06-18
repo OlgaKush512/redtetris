@@ -1,11 +1,11 @@
 // import { ReactComponent as Brand } from '../assets/logo.svg'
 import { NavLink } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { openForm } from './loginFormSlice';
 import './NavBar.css';
 
 const NavBar = () => {
-  const loginForm = useSelector((state) => state.loginForm.isOpen);
+  // const loginForm = useSelector((state) => state.loginForm.isOpen);
   const dispatch = useDispatch();
 
   return (
@@ -25,12 +25,7 @@ const NavBar = () => {
           </div>
           <div className="nav-elements-auth">
             <ul>
-              <li onClick={() => dispatch(openForm(true))}>
-                <button className="button-login">Log in</button>
-              </li>
-              {/* <li>
-                <NavLink to="/">Sign in</NavLink>
-              </li> */}
+              <li onClick={() => dispatch(openForm(true))}>Log in</li>
             </ul>
           </div>
         </div>

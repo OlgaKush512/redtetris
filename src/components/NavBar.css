@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* body {
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fcfcfc;
-} */
-
 .navbar {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #BD5F15;
+  background-color: #bd5f15;
 }
 .container {
   /* display: flex; */
@@ -41,7 +33,6 @@
   /* border: solid; */
   display: block;
   align-items: center;
-
 }
 
 .nav-elements ul {
@@ -52,39 +43,28 @@
 
 .nav-elements ul li {
   margin-right: 60px;
+  display: inline;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2f234f;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-elements ul a {
-  font-size: 16px;
-  font-weight: 400;
   color: #2f234f;
   text-decoration: none;
 }
 
-.nav-elements ul a.active {
+/* .nav-elements ul a.active {
   color: #574c4c;
   font-weight: 500;
   position: relative;
-}
+} */
 
-.nav-elements li a {
+/* .nav-elements li a {
   display: block;
   color: white;
   text-align: center;
-  /* padding: 14px 16px; */
   text-decoration: none;
-}
-
-.button-login {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 450;
-  color: #574c4c;
-  background-color: transparent;
-  border: none;
-  padding: 10px 20px;
-}
-
-.button-login:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
+} */

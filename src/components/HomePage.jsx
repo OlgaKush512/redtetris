@@ -56,8 +56,8 @@ const HomePage = () => {
         )}
       </div>
       <div className="rating">
-        <div className="game-option">1</div>
-        <div className="game-option">2</div>
+        <div className="rating-option">1</div>
+        <div className="rating-option">2</div>
       </div>
     </div>
   );
